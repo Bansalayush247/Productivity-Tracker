@@ -1,0 +1,36 @@
+.FAQsSection{
+  background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg");
+  transition: all 100ms linear;
+}
+.FAQsSection_heading {
+    padding: 2rem;
+    text-align: center;
+  }
+  .k{
+    background-image: url("https://i.pinimg.com/originals/82/a0/47/82a0474442bb6189afd19ba620222507.jpg");
+    background-size: cover;
+  }
+  .FAQsSection_heading img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .FAQsSection_topics {
+    color: #777777;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    
+  }
+  
+  
+  @media (max-width: 480px) {
+    .FAQsSection_heading img {
+      max-width: 80%;
+    }
+  
+    .FAQsSection_topics {
+      gap: 1rem;
+    }
+  }
+  

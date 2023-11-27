@@ -1,0 +1,188 @@
+.pt{
+  top: 0;
+  height: 100vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg");
+    background-size: cover;
+    transition: all 100ms linear;
+  }
+.lights{
+  background-image:url("https://i.pinimg.com/originals/82/a0/47/82a0474442bb6189afd19ba620222507.jpg");
+  background-size: cover;
+  
+}
+.lights .pt_intro p{
+  color: black;
+}
+
+.pt_intro{
+  
+    position: relative;
+    font-family: gilory;
+
+    width: 80%;
+    margin-top: 10rem;
+    text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   margin-bottom: 20rem;
+}
+.pt_intro h1{
+    color:hsl(66.88deg 62.06% 50.39%);
+    font-size: 3.7rem;
+    align-content: center;
+}
+.pt_intro p{
+    width: 80%;
+    color: white;
+}
+@media screen and (max-width: 850px) {
+  .pt_intro{
+ 
+    margin-bottom: 20rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pt_intro{
+    margin-top: 10rem;
+    margin-bottom: 23rem;
+  }
+  .pt_intro h1{
+    font-size: 3.2rem;
+  }
+  .pt_intro p{
+    font-size: 14px;  
+  }
+}
+@media screen and (max-width: 300px){
+  .pt_intro{
+ 
+    margin-bottom: 8rem;
+  }
+}
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(66.88deg 62.06% 50.39%)  ;
+  --body-color: hsl(66.88deg 62.06% 50.39%);
+  
+  /*========== Font and typography ==========*/
+  --body-font: 'Montserrat Alternates', sans-serif;
+  --normal-font-size: 1.25rem;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+/*=============== MAGIC BUTTONq ===============*/
+.buttonq {
+  position: relative;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .9rem 2.20rem;
+  border-radius: 3rem;
+  transition: .4s;
+  margin: 5px;
+}
+
+.buttonq::after {
+  content: '';
+  width: 80%;
+  height: 40%;
+  background: linear-gradient(80deg, 
+  hsl(66.88deg 62.06% 50.39%)  10%, 
+  hsl(66.88deg 62.06% 50.39%) 48%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  border-radius: 3rem;
+  filter: blur(12px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+.button__text {
+  position: relative;
+  z-index: 10;
+  text-decoration: none;
+
+}
+
+.buttonq img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: .6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.button__cone {
+  width: 18px;
+  transform: translate(-25px, -6px) rotate(55deg);
+  filter: blur(.5px);
+}
+
+.button__torus {
+  width: 34px;
+  transform: translate(7px, -14px) rotate(80deg);
+  filter: blur(.4px);
+}
+
+.button__icosahedron {
+  width: 36px;
+  transform: translate(34px, -4px) rotate(-45deg);
+  filter: blur(.9px);
+}
+
+.button__sphere {
+  width: 30px;
+  transform: translate(-5px, 15px) rotate(40deg);
+  filter: blur(.3px);
+}
+
+/* View shadow gradient */
+.buttonq:hover::after {
+  opacity: 1;
+}
+
+/* Buttonq scale */
+.buttonq:hover {
+  transform: scale(1.2);
+}
+
+/* View 3D geometric elements */
+.buttonq:hover img {
+  opacity: 1;
+}
+
+.buttonq:hover .button__cone {
+  transform: translate(-38px, -10px) scale(1.2);
+}
+
+.buttonq:hover .button__torus {
+  transform: translate(7px, -32px) scale(1.1);
+}
+
+.buttonq:hover .button__icosahedron {
+  transform: translate(50px, -20px) scale(1.1);
+}
+
+.buttonq:hover .button__sphere {
+  transform: translate(-14px, 20px) scale(1.1);
+}

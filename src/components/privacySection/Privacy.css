@@ -1,0 +1,27 @@
+.Privacy{
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg");
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    transition: all 100ms linear;
+
+    width: 100%;
+}
+.Privacy h1{
+ padding: 20px;
+    font-size:4rem ;
+    text-align: center  ;
+}
+.Privacy p{
+    
+    font-size: 20px;
+    padding: 30px;
+    padding-bottom:70px;
+    text-align: center;
+    
+    
+}
+.a{
+    background-image:url("https://i.pinimg.com/originals/82/a0/47/82a0474442bb6189afd19ba620222507.jpg");
+    background-size: cover;
+    color: black;
+}
